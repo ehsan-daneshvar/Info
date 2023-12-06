@@ -23,6 +23,7 @@ namespace Info.Infrastructure.Data
             modelBuilder.Entity<Specification>().HasData(
                 new Specification
                 {
+                    Id = 1,
                     Name = "Ehsan",
                     Family = "Daneshvar",
                     Address = "-",
