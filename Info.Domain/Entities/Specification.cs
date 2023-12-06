@@ -11,8 +11,8 @@ namespace Info.Domain.Entities
         public int Id { get; set; }
         public string Name { get; set; }
         public string Family { get; set; }
-        public DateTime Birth { get; set; }
-        public string Address { get; set; }
+        public DateTime? Birth { get; set; }
+        public string? Address { get; set; }
 
     }
 }
