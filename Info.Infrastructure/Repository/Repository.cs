@@ -16,7 +16,7 @@ namespace Info.Infrastructure.Repository
         internal readonly DbSet<T> dbSet;
         public Repository(ApplicationDbContext db)
         {
-            db = _db;
+            _db = db;
             dbSet = _db.Set<T>();
         }
         public void Add(T entity)

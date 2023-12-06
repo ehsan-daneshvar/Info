@@ -1,0 +1,22 @@
+﻿@model Info.Domain.Entities.Specification
+
+<table class="table table-striped table-dark ">
+    <thead>
+    <tr>
+        <th scope="col">Name</th>
+        <th scope="col">Family</th>
+        <th scope="col">Address</th>
+        <th scope="col">BirthDay</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>@Model.Name</td>
+        <td>@Model.Family</td>
+        <td>@Model.Address</td>
+        <td>@Model.Birth</td>
+    </tr>
+    </tbody>
+    
+</table>
+<div class="text-center"><button type="button" class="btn btn-primary w-100">Edit</button> </div>

@@ -7,7 +7,7 @@ using Info.Domain.Entities;
 
 namespace Info.Application.Common.Interfaces
 {
-    public interface ISpecificationRepository
+    public interface ISpecificationRepository : IRepository<Specification>
     {
         void Update(Specification entity);
     }
