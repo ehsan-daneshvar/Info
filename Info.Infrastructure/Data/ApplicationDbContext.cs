@@ -5,11 +5,12 @@ using System.Reflection.Metadata;
 using System.Text;
 using System.Threading.Tasks;
 using Info.Domain.Entities;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
 namespace Info.Infrastructure.Data
 {
-    public class ApplicationDbContext:DbContext
+    public class ApplicationDbContext:IdentityDbContext
     {
         public ApplicationDbContext(DbContextOptions options):base(options)
         {
