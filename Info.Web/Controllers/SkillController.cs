@@ -3,17 +3,17 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Info.Web.Controllers
 {
-    public class Specification : Controller
+    public class SkillController : Controller
     {
         private readonly IUnitOfWork _unitOfWork;
-        public Specification(IUnitOfWork unitOfWork)
+        public SkillController(IUnitOfWork unitOfWork)
         {
             _unitOfWork = unitOfWork;
         }
         public IActionResult Index()
         {
-            var specification = _unitOfWork.Specification.GetAll().FirstOrDefault();
-            return View(specification);
+            var allSkills = _unitOfWork.Skill.GetAll();
+            return View(allSkills);
         }
     }
 }

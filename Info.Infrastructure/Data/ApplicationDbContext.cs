@@ -17,6 +17,7 @@ namespace Info.Infrastructure.Data
         }
 
         public DbSet<Specification> Specifications { get; set; }
+        public DbSet<Skill> Skills { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

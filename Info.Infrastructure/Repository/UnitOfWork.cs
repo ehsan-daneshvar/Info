@@ -12,11 +12,13 @@ namespace Info.Infrastructure.Repository
     {
         private readonly ApplicationDbContext _db;
         public ISpecificationRepository Specification { get; }
+        public ISkillRepository Skill { get; }
 
         public UnitOfWork(ApplicationDbContext db)
         {
             _db=db;
             Specification = new SpecificationRepository(_db);
+            Skill = new SkillRepository(_db);
         }
         public void Save()
         {
