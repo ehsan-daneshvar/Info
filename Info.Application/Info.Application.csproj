@@ -10,4 +10,11 @@
     <ProjectReference Include="..\Info.Domain\Info.Domain.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Common\DTO\" />
+    <Folder Include="Common\Utility\" />
+    <Folder Include="Service\Inteface\" />
+    <Folder Include="Service\Implementation\" />
+  </ItemGroup>
+
 </Project>
